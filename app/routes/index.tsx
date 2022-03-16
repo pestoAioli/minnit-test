@@ -1,29 +1,38 @@
+import type { LinksFunction } from "remix";
+
+import stylesUrl from "~/styles/index.css";
+
+export const links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: stylesUrl }];
+};
+
+
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
+    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4", display: "flex", justifyContent: "space-around"}}>
+      <a href="https://dddance.party/#bo733"><img src="https://fontmeme.com/permalink/220316/c66c9e057ea88e7832672e6a3e2656d4.png" alt="hot-sauce-nct-dream-font" style={{border: "0"}}/></a>
+      <ul style={{ display: "flex", gap: "20px", listStyle: "none"}} > 
+        <li >
           <a
             target="_blank"
-            href="https://remix.run/tutorials/blog"
+            href="https://autumn-river-9476.fly.dev"
             rel="noreferrer"
           >
-            15m Quickstart Blog Tutorial
+            curbs
           </a>
         </li>
         <li>
           <a
             target="_blank"
-            href="https://remix.run/tutorials/jokes"
+            href="https://github.com/pestoAioli"
             rel="noreferrer"
           >
-            Deep Dive Jokes App Tutorial
+            github
           </a>
         </li>
         <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
+          <a target="_blank" href="https://www.linkedin.com/in/ricky-rivera-075153224/" rel="noreferrer">
+            linked in
           </a>
         </li>
       </ul>
