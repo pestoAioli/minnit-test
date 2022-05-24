@@ -27,7 +27,6 @@ export default function App() {
         <iframe
           src="https://minnit.chat/rickychat?embed&&nickname="
           style={{ border: "none", width: "100%", height: "500px"}}
-          allowTransparency={true}
         ></iframe>
         <br />
         </div>

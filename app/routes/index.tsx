@@ -9,8 +9,10 @@ export const links: LinksFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4", display: "flex", justifyContent: "space-around"}}>
+    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4", display: "flex", flexDirection: "column", justifyContent: "space-around"}}>
+      <div style={{ objectFit: "contain", width: "100%"}}>
       <a href="https://dddance.party/#bo733"><img src="https://fontmeme.com/permalink/220316/c66c9e057ea88e7832672e6a3e2656d4.png" alt="hot-sauce-nct-dream-font" style={{border: "0"}}/></a>
+      </div>
       <ul style={{ display: "flex", gap: "20px", listStyle: "none"}} > 
         <li >
           <a
